@@ -22,7 +22,7 @@ namespace ArrayDemo
             int option;
 
             WriteLine("Choose option 1 for viewing the list in order first to last postion." +
-                "Choose option 2 for view the order last to first. Choose option 3 to select a position.");
+                "Choose option 2 for view the order last to first. Choose option 3 to select a position.\n");
             option = Convert.ToInt32(ReadLine());
 
             if (option == 1)
@@ -34,13 +34,22 @@ namespace ArrayDemo
             }
             else if (option == 2)
             {
-                for (int b = 0; b < arr.Length; ++b )
+                for (int b = 7; b >= 0; b-- )
                 {
-                    Array.Reverse(arr);
+                    
                     WriteLine(arr[b]);
                 }
             }
+            else if (option == 3)
+            {
+                int choice;
+                
+                WriteLine("What position ");
+                choice = Convert.ToInt32(ReadLine());
+                WriteLine("The number is " + arr[choice]);
 
+            }
+            ReadLine();
         }
     }
 }
