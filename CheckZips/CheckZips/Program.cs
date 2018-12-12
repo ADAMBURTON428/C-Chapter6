@@ -11,7 +11,7 @@ namespace CheckZips
         static void Main(string[] args)
         {
             int[] zipCode = { 11111, 12685, 77777, 12345, 77677, 22222, 10023, 54321, 20012, 97654};
-            int userZipe;
+            int userZipe = 0;
 
             WriteLine("Enter a 5 digit Zip Code ");
             userZipe = Convert.ToInt32(ReadLine());
